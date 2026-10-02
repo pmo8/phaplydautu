@@ -1,0 +1,1552 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy Trình Pháp Lý Đầu Tư DA Trong KCN 2026 - KIEN LAC GROUP</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --secondary: #0f172a;
+            --accent: #f59e0b;
+            --accent-gold: #d97706;
+            --gold-light: #fef3c7;
+            --kienlac-red: #3b0712;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Company Bar */
+        .top-company-bar {
+            background-color: #0b1120;
+            color: #94a3b8;
+            font-size: 0.82rem;
+            padding: 9px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .top-company-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-company-info {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .top-company-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hotline-highlight {
+            color: #fbbf24;
+            font-weight: 700;
+        }
+
+        .mst-badge {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+
+        /* Top Header */
+        header {
+            background: linear-gradient(135deg, #090e1a 0%, #111827 40%, #3b0712 85%, #0369a1 100%);
+            color: #ffffff;
+            padding: 35px 24px 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.25);
+            border-bottom: 3px solid #f59e0b;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        /* Logo Styling */
+        .company-logo-wrapper {
+            flex-shrink: 0;
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            background: #3b0712;
+            border: 3px solid #fbbf24;
+            box-shadow: 0 0 25px rgba(251, 191, 36, 0.35), 0 8px 16px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .company-logo-wrapper:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .company-logo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            background: rgba(251, 191, 36, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #fbbf24;
+            margin-bottom: 8px;
+        }
+
+        .company-subname {
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            color: #fcd34d;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .header-title {
+            font-size: 2.1rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+
+        .header-subtitle {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            max-width: 950px;
+            font-weight: 400;
+        }
+
+        .header-actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 18px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #0284c7;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0369a1;
+            transform: translateY(-1px);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #d97706, #b45309);
+            color: #fff;
+            border: 1px solid #f59e0b;
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #b45309, #92400e);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-success {
+            background-color: #059669;
+            color: #fff;
+        }
+
+        .btn-success:hover {
+            background-color: #047857;
+            transform: translateY(-1px);
+        }
+
+        /* Navigation Bar */
+        .nav-tabs-wrapper {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-tabs {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 8px;
+            padding: 0 24px;
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            padding: 16px 18px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+
+        /* Tab Contents */
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title span.icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* Legal Comparison Table */
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table.legal-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+
+        table.legal-table th {
+            background-color: #f1f5f9;
+            color: var(--secondary);
+            padding: 14px 16px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        table.legal-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        table.legal-table tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .status-active {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .status-warning {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .status-danger {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .status-info {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        /* Workflow Image Container */
+        .workflow-image-wrapper {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            overflow-x: auto;
+            margin-bottom: 24px;
+        }
+
+        .workflow-image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .img-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* 5-Phase SOP Timeline Grid */
+        .phase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 20px;
+        }
+
+        .phase-card {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s;
+        }
+
+        .phase-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .phase-header {
+            padding: 16px 20px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .p-1 {
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+        }
+
+        .p-2 {
+            background: linear-gradient(135deg, #059669, #047857);
+        }
+
+        .p-3 {
+            background: linear-gradient(135deg, #d97706, #b45309);
+        }
+
+        .p-4 {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+        }
+
+        .p-5 {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+
+        .phase-body {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .step-item {
+            border-left: 3px solid #cbd5e1;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .step-item.highlight {
+            border-left-color: var(--primary);
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .step-desc {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .step-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.78rem;
+        }
+
+        .meta-tag {
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #475569;
+            font-weight: 600;
+        }
+
+        /* Fast-track banner */
+        .fast-track-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            border: 2px solid #86efac;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .fast-track-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #166534;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* Corporate Footer */
+        footer {
+            background: #090e1a;
+            color: #94a3b8;
+            padding: 40px 24px 30px;
+            border-top: 3px solid #f59e0b;
+            margin-top: 60px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 30px;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        .footer-logo {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            border: 2px solid #fbbf24;
+            overflow: hidden;
+            background: #3b0712;
+            flex-shrink: 0;
+        }
+
+        .footer-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer-company-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .footer-company-addr {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .footer-contact {
+            text-align: right;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 900px) {
+            .footer-contact {
+                text-align: center;
+            }
+        }
+
+        .copyright-bar {
+            max-width: 1400px;
+            margin: 25px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.78rem;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Print styling */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                animation: none !important;
+                transition: none !important;
+            }
+
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+
+            .top-company-bar {
+                display: block !important;
+                background: #090e1a !important;
+                color: #fff !important;
+            }
+
+            header {
+                padding: 20px 24px !important;
+                background: #090e1a !important;
+            }
+
+            .nav-tabs-wrapper,
+            .header-actions,
+            .img-toolbar {
+                display: none !important;
+            }
+
+            .container {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 10px !important;
+            }
+
+            .tab-pane {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                margin-bottom: 30px !important;
+            }
+
+            .card {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+                page-break-inside: avoid;
+                margin-bottom: 20px !important;
+            }
+
+            .table-responsive {
+                overflow: visible !important;
+            }
+
+            table.legal-table {
+                font-size: 0.82rem !important;
+            }
+
+            .workflow-image-wrapper img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            footer {
+                background: #090e1a !important;
+                color: #fff !important;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Corporate Info Bar -->
+    <div class="top-company-bar">
+        <div class="top-company-inner">
+            <div class="top-company-info">
+                <span>🏢 <strong>TẬP ĐOÀN KIẾN LẠC (KIEN LAC GROUP)</strong></span>
+                <span>📍 Cơ sở An Giang: <span class="mst-badge">MST: 1702360622</span></span>
+                <span>📍 Cơ sở TP.HCM: <span class="mst-badge">MST: 3703510585</span></span>
+            </div>
+            <div class="top-company-info">
+                <span>📞 Hotline: <strong class="hotline-highlight">0909 860 118</strong></span>
+                <a href="https://kienlac.vn" target="_blank" rel="noopener noreferrer"
+                    style="color: #ffffff; text-decoration: none; font-family: sans-serif;">
+                    <span style="margin-right: 5px;">🌐</span> kienlac.vn
+                </a>
+
+                <span>✨ "Vững tâm – Vươn tầm – Dẫn đầu"</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section with Company Branding -->
+    <header>
+        <div class="header-container">
+            <!-- Dual Logos for Kien Lac Group -->
+            <div class="company-logo-wrapper" style="display: flex; align-items: center; justify-content: center;">
+                <img src="Logo Kien Lac - Dau tu.jpg" alt="Logo Kiến Lạc Group" title="Kiến Lạc Group"
+                    style="width: 88px; height: 88px; border-radius: 50%; border: 3px solid #fbbf24; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+            </div>
+
+            <!-- Header Content -->
+            <div class="header-content">
+                <div class="company-subname" style="letter-spacing: 1px;">TẬP ĐOÀN KIẾN LẠC (KIEN LAC GROUP) • HỆ SINH
+                    THÁI ĐẦU TƯ BẤT ĐỘNG SẢN CÔNG NGHIỆP</div>
+                <div class="badge-tag"
+                    style="background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.4); color: #fbbf24; padding: 6px 14px; border-radius: 6px; font-weight: 700; margin-bottom: 12px; display: inline-block;">
+                    ⚡ Chuẩn Hóa Pháp Lý Quốc Gia 2026 - Tích Hợp Toàn Diện 2 Cơ Sở Trụ Sở Doanh Nghiệp
+                </div>
+                <h1 class="header-title" style="margin-bottom: 10px;">QUY TRÌNH PHÁP LÝ ĐẦU TƯ DỰ ÁN TRONG KHU CÔNG
+                    NGHIỆP</h1>
+
+                <!-- 2 Cơ Sở Highlight Box -->
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; background: rgba(15,23,42,0.6); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 12px 16px; margin-bottom: 16px; text-align: left;">
+                    <div>
+                        <div style="font-weight: 800; color: #38bdf8; font-size: 0.92rem;">🏛️ CƠ SỞ 1: CÔNG TY CỔ PHẦN
+                            TƯ VẤN NGHIÊN CỨU PHÁT TRIỂN & ĐẦU TƯ KIẾN LẠC</div>
+                        <div style="font-size: 0.82rem; color: #fbbf24; font-weight: 700; margin: 2px 0;">Mã số thuế:
+                            1702360622</div>
+                        <div style="font-size: 0.8rem; color: #cbd5e1;">Địa chỉ: Số 16, đường Nguyễn Chí Thanh, Khu phố
+                            12 Dương Đông, TP. Phú Quốc, Tỉnh An Giang.</div>
+                    </div>
+                    <div>
+                        <div style="font-weight: 800; color: #34d399; font-size: 0.92rem;">🏛️ CƠ SỞ 2: CÔNG TY CỔ PHẦN
+                            TƯ VẤN PHÁT TRIỂN & ĐẦU TƯ XÂY DỰNG KIẾN LẠC</div>
+                        <div style="font-size: 0.82rem; color: #fbbf24; font-weight: 700; margin: 2px 0;">Mã số thuế:
+                            3703510585</div>
+                        <div style="font-size: 0.8rem; color: #cbd5e1;">Địa chỉ: Số 5 đường D7, KDC Phát triển đô thị
+                            Tân Bình, KP Tân Phước, phường Tân Đông Hiệp, TP. Hồ Chí Minh.</div>
+                    </div>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-action btn-gold" onclick="window.print()">🖨️ In ấn / Xuất file PDF</button>
+                    <a href="so_do_quy_trinh_kcn_2026_group.png" target="_blank" class="btn-action btn-success">🖼️ Mở
+                        Ảnh Sơ Đồ PNG Gốc</a>
+                    <a href="so_do_quy_trinh_kcn_2026_group.svg" target="_blank" class="btn-action btn-secondary">📐 Mở
+                        Vector SVG Siêu Nét</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs-wrapper">
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('tab-workflow')">1. Sơ Đồ Trình Chiếu Quy Trình (Dạng Ảnh
+                & Vector)</button>
+            <button class="tab-btn" onclick="switchTab('tab-compare')">2. Rà Soát Căn Cứ Pháp Lý (Cũ vs Mới)</button>
+            <button class="tab-btn" onclick="switchTab('tab-sop')">3. Sổ Tay Quy Trình Chi Tiết (5 Giai Đoạn)</button>
+            <button class="tab-btn" onclick="switchTab('tab-fasttrack')">4. Cơ Chế Đầu Tư Đặc Biệt (Fast-Track)</button>
+            <button class="tab-btn" onclick="switchTab('tab-timeline')">5. Tiến Độ Song Song & Điểm Nghẽn</button>
+        </nav>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- TAB 1: SƠ ĐỒ TRÌNH CHIẾU DẠNG ẢNH & VECTOR -->
+        <section id="tab-workflow" class="tab-pane active">
+            <div class="card">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="icon">🖼️</span>
+                        Sơ Đồ Luồng Quy Trình Pháp Lý Đầu Tư Dự Án Trong KCN (Workflow 2026)
+                    </h2>
+                    <div>
+                        <span class="status-badge status-active">Bản Quyền Kiến Lạc HCM 2026</span>
+                    </div>
+                </div>
+                <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.95rem;">
+                    Sơ đồ tổng thể được trực quan hóa thành dạng <strong>hình ảnh độ phân giải cao</strong> và
+                    <strong>đồ họa vector SVG</strong> có tích hợp logo và nhận diện thương hiệu của <strong>Tập đoàn
+                        Kiến Lạc (KIEN LAC GROUP) với hệ sinh thái 2 cơ sở tại An Giang (MST: 1702360622) và TP. Hồ Chí
+                        Minh (MST: 3703510585)</strong>, hiển thị hoàn hảo trên mọi thiết bị và trình chiếu hội thảo.
+                </p>
+
+                <!-- Embedded Workflow Image -->
+                <div class="workflow-image-wrapper">
+                    <img src="so_do_quy_trinh_kcn_2026_group.png"
+                        alt="Sơ Đồ Quy Trình Pháp Lý Đầu Tư Dự Án Trong Khu Công Nghiệp 2026 - Kiến Lạc HCM"
+                        id="workflowImage" onerror="this.onerror=null; this.src='so_do_quy_trinh_kcn_2026_group.svg';">
+
+                    <div class="img-toolbar">
+                        <span>💡 <em>Mẹo: Click chuột phải vào ảnh chọn "Open image in new tab" hoặc click nút bên dưới
+                                để xem/tải ảnh kích thước đầy đủ (1650 x 1210 px).</em></span>
+                        <div style="display:flex; gap:10px;">
+                            <a href="so_do_quy_trinh_kcn_2026_group.png"
+                                download="So_Do_Quy_Trinh_KCN_2026_KienLacHCM.png" class="btn-action btn-primary"
+                                style="padding: 6px 14px; font-size: 0.8rem;">📥 Tải Ảnh PNG Gốc</a>
+                            <a href="so_do_quy_trinh_kcn_2026_group.svg" target="_blank"
+                                class="btn-action btn-secondary"
+                                style="padding: 6px 14px; font-size: 0.8rem; color:#0f172a; border-color:#cbd5e1;">🔍
+                                Xem Bản Vector SVG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Textual Quick Summary Pipeline -->
+                <div
+                    style="background: #f1f5f9; padding: 18px; border-radius: 10px; font-size: 0.88rem; color: #334155; line-height: 1.8;">
+                    <strong style="color: #0f172a; font-size: 0.95rem;">Tóm tắt chuỗi luồng 5 giai đoạn:</strong><br>
+                    <strong>1. Khảo sát & Ký MOU giữ đất</strong> (với CĐT hạ tầng) ➜
+                    <strong>2. Lựa chọn luồng IRC:</strong> Luồng Fast-track (Đ36a - 15 ngày) hoặc Luồng Tiêu chuẩn
+                    (Đ33, 37 - 20-30 ngày) ➜
+                    <strong>3. Ký HĐ Thuê đất chính thức & Cấp Sổ hồng KCN</strong> (Đ202 Luật Đất đai 2024) ➜
+                    <strong>4. Triển khai Song song:</strong> Tổng mặt bằng (Đ10 NĐ 178) + ĐTM + Thẩm duyệt PCCC (NĐ
+                    105) ➜
+                    <strong>5. Thẩm định Báo cáo NCKT (FS)</strong> tại BQL KCN (NĐ 175/2024) & CĐT duyệt Bản vẽ thi
+                    công ➜
+                    <strong>6. Miễn GPXD (Đ89 Luật XD) & Gửi Thông báo khởi công</strong> ➜
+                    <strong>7. Nghiệm thu PCCC & Kiểm tra nghiệm thu công trình XD</strong> ➜
+                    <strong>8. Hoàn công tài sản nhà xưởng & Vận hành chính thức.</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: RÀ SOÁT CĂN CỨ PHÁP LÝ CŨ VS MỚI -->
+        <section id="tab-compare" class="tab-pane">
+            <div class="card">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="icon">⚖️</span>
+                        Bảng Rà Soát & Đối Chiếu Hiệu Lực Căn Cứ Pháp Lý (Từ file 20260100)
+                    </h2>
+                    <span class="status-badge status-info">Cập nhật dữ liệu hệ thống 2026</span>
+                </div>
+                <p style="margin-bottom: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    Bảng phân tích, thẩm tra và chuẩn hóa từng điều khoản được trích dẫn trong bản vẽ sơ đồ cũ
+                    <code>20260100.quy trinh phap ly dau tu DA trong KCN.pdf</code>. Làm rõ các điều khoản bị dẫn sai,
+                    bổ sung các quy định mới nhất và chỉ ra các lưu ý thực chiến.
+                </p>
+
+                <div class="table-responsive">
+                    <table class="legal-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px;">STT</th>
+                                <th style="width: 220px;">Căn cứ trong file cũ (20260100)</th>
+                                <th style="width: 150px;">Trạng thái hiệu lực</th>
+                                <th style="width: 250px;">Căn cứ pháp lý Thay thế / Bổ sung chuẩn</th>
+                                <th>Đánh giá chuyên sâu & Hướng dẫn áp dụng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>01</strong></td>
+                                <td><strong>Điều 19 Luật Đầu tư 2020</strong><br><small
+                                        style="color:var(--text-muted)">NĐT lập & trình đề xuất dự án đầu tư</small>
+                                </td>
+                                <td><span class="status-badge status-danger">Sai số điều luật</span></td>
+                                <td>
+                                    <strong>Điều 33 Luật Đầu tư 2020</strong><br>
+                                    (hoặc Luật Đầu tư 143/2025/QH15); kết hợp Điều 37, 38
+                                </td>
+                                <td>
+                                    Bản cũ viện dẫn nhầm: Điều 19 là quy định về <em>"Chính sách ưu đãi và hỗ trợ đầu tư
+                                        đặc biệt"</em>. Quy định về <strong>Hồ sơ đề xuất dự án đầu tư</strong> chuẩn
+                                    nằm tại <strong>Điều 33</strong>. NĐT thứ cấp trong KCN đã có hạ tầng thường nộp hồ
+                                    sơ cấp GCN ĐKĐT theo <strong>Điều 37, 38</strong> (không thuộc diện xin chấp thuận
+                                    chủ trương đầu tư).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>02</strong></td>
+                                <td><strong>Điều 37 - 40 Luật Đầu tư 2020; NĐ 31/2021/NĐ-CP</strong><br><small
+                                        style="color:var(--text-muted)">Cấp GCN Đăng ký đầu tư (IRC)</small></td>
+                                <td><span class="status-badge status-warning">Đã sửa đổi, bổ sung</span></td>
+                                <td>
+                                    <strong>Luật số 57/2024/QH15; Điều 36a Luật Đầu tư; Nghị định 19/2025/NĐ-CP</strong>
+                                </td>
+                                <td>
+                                    <strong>Bổ sung đột phá mới:</strong> Quốc hội đã bổ sung <strong>Điều 36a Luật Đầu
+                                        tư</strong> quy định về <em>"Thủ tục đầu tư đặc biệt"</em> áp dụng tại Khu công
+                                    nghiệp, Khu kinh tế hướng dẫn bởi <strong>Nghị định 19/2025/NĐ-CP</strong>. Dự án
+                                    công nghệ cao, R&D, bán dẫn được cấp IRC trong vòng <strong>15 ngày</strong> và
+                                    chuyển từ tiền kiểm sang hậu kiểm.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>03</strong></td>
+                                <td><strong>Điều 43 Luật Đầu tư 2020; Điều 25 NĐ 31/2021/NĐ-CP</strong><br><small
+                                        style="color:var(--text-muted)">Bảo đảm thực hiện dự án (Ký quỹ)</small></td>
+                                <td><span class="status-badge status-danger">Bản cũ ghi sai bản chất</span></td>
+                                <td>
+                                    <strong>Khoản 1 Điều 43 Luật Đầu tư 2020; Điều 25 NĐ 31/2021/NĐ-CP</strong>
+                                </td>
+                                <td>
+                                    File cũ ghi chú <em>"NĐT trong nước không bắt buộc"</em> là <strong>hoàn toàn sai
+                                        luật</strong>. Luật Đầu tư không phân biệt NĐT trong nước hay nước ngoài. Việc
+                                    <strong>miễn ký quỹ</strong> áp dụng khi: NĐT thuê lại đất đã hoàn thiện kết cấu hạ
+                                    tầng kỹ thuật từ CĐT hạ tầng KCN (Điểm e Khoản 1 Điều 43). Do đó NĐT thứ cấp trong
+                                    KCN thông thường được <strong>miễn ký quỹ với Nhà nước</strong>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>04</strong></td>
+                                <td><strong>Điều 10, Điều 9 NĐ 178/2025/NĐ-CP</strong><br><small
+                                        style="color:var(--text-muted)">Quy hoạch xây dựng (Tổng mặt bằng &
+                                        KTCT)</small></td>
+                                <td><span class="status-badge status-active">Đang có hiệu lực</span></td>
+                                <td>
+                                    <strong>Luật Quy hoạch đô thị và nông thôn 2024 (số 47/2024/QH15); NĐ
+                                        178/2025/NĐ-CP</strong>
+                                </td>
+                                <td>
+                                    Bản cũ đón đầu đúng Nghị định 178/2025/NĐ-CP (có hiệu lực từ 01/07/2025 cùng Luật
+                                    Quy hoạch đô thị và nông thôn 2024). Dự án công trình công nghiệp trong KCN có diện
+                                    tích <strong>dưới 10 ha</strong> chỉ cần lập <strong>Tổng mặt bằng và phương án kiến
+                                        trúc</strong> trình BQL KCN phê duyệt, không phải lập đồ án 1/500 riêng biệt.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>05</strong></td>
+                                <td><strong>Chương 10 Luật Đất đai 2024</strong><br><small
+                                        style="color:var(--text-muted)">Giấy chứng nhận QSDĐ</small></td>
+                                <td><span class="status-badge status-active">Đang có hiệu lực</span></td>
+                                <td>
+                                    <strong>Điều 202 Luật Đất đai 2024; Nghị định 101/2024/NĐ-CP; NĐ
+                                        102/2024/NĐ-CP</strong>
+                                </td>
+                                <td>
+                                    Luật Đất đai 2024 (Luật số 31/2024/QH15) có hiệu lực từ 01/08/2024. Cần chuẩn hóa
+                                    tên gọi mẫu giấy chứng nhận mới theo luật là: <strong>"Giấy chứng nhận quyền sử dụng
+                                        đất, quyền sở hữu tài sản gắn liền với đất"</strong>. Hướng dẫn chi tiết cấp đổi
+                                    và hoàn công tài sản thực hiện theo Nghị định 101/2024/NĐ-CP.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>06</strong></td>
+                                <td><strong>Chương 2, Chương 3 NĐ 175/2024/NĐ-CP</strong><br><small
+                                        style="color:var(--text-muted)">Thẩm định FS, Thẩm định Thiết kế kỹ
+                                        thuật</small></td>
+                                <td><span class="status-badge status-active">Đang có hiệu lực</span></td>
+                                <td>
+                                    <strong>Nghị định số 175/2024/NĐ-CP</strong><br>
+                                    (Thay thế hoàn toàn Nghị định số 15/2021/NĐ-CP)
+                                </td>
+                                <td>
+                                    Bản cũ cập nhật chuẩn xác Nghị định 175/2024/NĐ-CP (ban hành ngày 30/12/2024). Điểm
+                                    mấu chốt: Thẩm quyền thẩm định Báo cáo NCKT (thiết kế cơ sở) được phân cấp triệt để
+                                    cho Ban Quản lý KCN. Chủ đầu tư tự tổ chức thẩm định, phê duyệt thiết kế bản vẽ thi
+                                    công (DED).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>07</strong></td>
+                                <td><strong>"Luật Xây dựng 2025"</strong><br><small style="color:var(--text-muted)">Ghi
+                                        tại Khoản 2 Điều 43 & Mục 3 Chương 4</small></td>
+                                <td><span class="status-badge status-warning">Chưa chuẩn hóa danh xưng</span></td>
+                                <td>
+                                    <strong>Luật Xây dựng 2014 (sửa đổi 2020 bởi Luật 62/2020, Luật 57/2024)</strong> &
+                                    Dự thảo Luật XD sửa đổi
+                                </td>
+                                <td>
+                                    Tên gọi chính thức trong hệ thống văn bản quy phạm pháp luật hiện hành vẫn là Luật
+                                    Xây dựng 2014 và các Luật sửa đổi, bổ sung liên quan. Cần chuẩn hóa trích dẫn để đảm
+                                    bảo tính pháp lý khi nộp hồ sơ cơ quan hành chính nhà nước.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>08</strong></td>
+                                <td><strong>Nghị định 105/2025/NĐ-CP; Luật PCCC&CNCH 2024</strong><br><small
+                                        style="color:var(--text-muted)">Thẩm duyệt PCCC & Nghiệm thu PCCC</small></td>
+                                <td><span class="status-badge status-active">Đang có hiệu lực</span></td>
+                                <td>
+                                    <strong>Luật số 55/2024/QH15; Nghị định số 105/2025/NĐ-CP</strong><br>
+                                    (Thay thế NĐ 136/2020 và NĐ 50/2024)
+                                </td>
+                                <td>
+                                    Căn cứ chuẩn xác. Luật Phòng cháy, chữa cháy và Cứu nạn, cứu hộ 2024 có hiệu lực từ
+                                    01/07/2025. Nghị định 105/2025/NĐ-CP điều chỉnh quy trình thẩm duyệt và nghiệm thu
+                                    PCCC, đồng thời tạo cơ chế thẩm duyệt tích hợp song song với thẩm định xây dựng.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>09</strong></td>
+                                <td><strong>Luật Bảo vệ môi trường 2020</strong><br><small
+                                        style="color:var(--text-muted)">ĐTM, Giấy phép môi trường (GPMT)</small></td>
+                                <td><span class="status-badge status-active">Đang có hiệu lực</span></td>
+                                <td>
+                                    <strong>Luật BVMT 2020 (Luật số 72/2020/QH14); Nghị định 08/2022/NĐ-CP</strong>
+                                </td>
+                                <td>
+                                    Điều khoản viện dẫn chuẩn. Cần bổ sung quy chế thực tiễn: UBND cấp tỉnh đã
+                                    <strong>ủy quyền cho Ban Quản lý KCN</strong> thẩm định ĐTM và cấp Giấy phép Môi
+                                    trường (GPMT) đối với các dự án thuộc thẩm quyền cấp tỉnh, giúp NĐT thực hiện trọn
+                                    gói tại BQL KCN.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>10</strong></td>
+                                <td><strong>Thủ tục Miễn Giấy phép xây dựng</strong><br><small
+                                        style="color:var(--text-muted)">Không có trong sơ đồ cũ</small></td>
+                                <td><span class="status-badge status-info">Cần bổ sung làm rõ</span></td>
+                                <td>
+                                    <strong>Điểm g Khoản 2 Điều 89 Luật Xây dựng (sửa đổi 2020)</strong>
+                                </td>
+                                <td>
+                                    <strong>Lợi thế đặc quyền KCN:</strong> Công trình trong KCN có Tổng mặt bằng /
+                                    1/500 được duyệt và đã qua thẩm định thiết kế cơ sở tại BQL KCN thì <strong>ĐƯỢC
+                                        MIỄN GIẤY PHÉP XÂY DỰNG</strong>. Chủ đầu tư chỉ cần nộp <strong>Thông báo khởi
+                                        công</strong> trước 03 ngày. Sơ đồ cũ chưa làm nổi bật ưu đãi này.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: SỔ TAY QUY TRÌNH 5 GIAI ĐOẠN -->
+        <section id="tab-sop" class="tab-pane">
+            <div class="card">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="icon">📋</span>
+                        Sổ Tay Chi Tiết Từng Bước Thủ Tục (Standard Operating Procedure - SOP)
+                    </h2>
+                    <span class="status-badge status-active">5 Giai Đoạn Chuẩn Hóa</span>
+                </div>
+
+                <div class="phase-grid">
+                    <!-- Giai đoạn 1 -->
+                    <div class="phase-card">
+                        <div class="phase-header p-1">
+                            <span>GIAI ĐOẠN 1: CHUẨN BỊ ĐẦU TƯ & CẤP IRC</span>
+                            <span>Bước 1.1 - 1.3</span>
+                        </div>
+                        <div class="phase-body">
+                            <div class="step-item highlight">
+                                <div class="step-title">1.1. Ký Hợp đồng nguyên tắc thuê đất (MOU)</div>
+                                <div class="step-desc">Khảo sát lô đất, đánh giá khả năng đấu nối điện nước xả thải. Ký
+                                    MOU giữ đất kèm đặt cọc 5% - 10%. Nhận bản vẽ vị trí lô đất.</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Đối tác: CĐT Hạ tầng KCN</span>
+                                    <span class="meta-tag">Thời gian: 7 - 14 ngày</span>
+                                </div>
+                            </div>
+                            <div class="step-item highlight">
+                                <div class="step-title">1.2. Nộp hồ sơ xin cấp GCN Đăng ký đầu tư (IRC)</div>
+                                <div class="step-desc">Hồ sơ theo Điều 33, 37 Luật Đầu tư 2020 (sửa đổi): Đề xuất dự án,
+                                    năng lực tài chính, thỏa thuận địa điểm, sơ bộ ĐTM, giải trình công nghệ.</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Cơ quan: Ban Quản lý KCN</span>
+                                    <span class="meta-tag">Luật định: 15 ngày</span>
+                                    <span class="meta-tag">Thực tế: 20 - 30 ngày</span>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-title">1.3. Thành lập Doanh nghiệp dự án (ERC)</div>
+                                <div class="step-desc">Thành lập pháp nhân mới tại Việt Nam, khắc dấu, mở tài khoản vốn
+                                    đầu tư trực tiếp (DICA).</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Cơ quan: Sở KH&ĐT / BQL KCN</span>
+                                    <span class="meta-tag">Thời gian: 03 ngày</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giai đoạn 2 -->
+                    <div class="phase-card">
+                        <div class="phase-header p-2">
+                            <span>GIAI ĐOẠN 2: THUÊ ĐẤT & CẤP SỔ ĐỎ KCN</span>
+                            <span>Bước 2.1 - 2.3</span>
+                        </div>
+                        <div class="phase-body">
+                            <div class="step-item highlight">
+                                <div class="step-title">2.1. Ký Hợp đồng thuê lại đất chính thức</div>
+                                <div class="step-desc">Căn cứ Điều 202 Luật Đất đai 2024. Chốt phương thức trả tiền (trả
+                                    1 lần hoặc hàng năm), đơn giá, phí hạ tầng và tiến độ thanh toán.</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Đối tác: CĐT Hạ tầng KCN</span>
+                                    <span class="meta-tag">Thời gian: 7 - 10 ngày</span>
+                                </div>
+                            </div>
+                            <div class="step-item highlight">
+                                <div class="step-title">2.2. Bàn giao mốc giới đất thực địa</div>
+                                <div class="step-desc">Bàn giao mốc giới tọa độ VN-2000 ngoài thực địa kèm Bản đồ trích
+                                    đo địa chính thửa đất.</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Đơn vị: CĐT Hạ tầng & BQL KCN</span>
+                                    <span class="meta-tag">Thời gian: 3 - 5 ngày</span>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-title">2.3. Cấp GCN Quyền sử dụng đất & TSGLVĐ</div>
+                                <div class="step-desc">Đăng ký đất đai và cấp Sổ hồng mang tên Doanh nghiệp dự án theo
+                                    Nghị định 101/2024/NĐ-CP.</div>
+                                <div class="step-meta">
+                                    <span class="meta-tag">Cơ quan: VPĐK Đất đai / Sở TNMT</span>
+                                    <span class="meta-tag">Thời gian: 15 - 20 ngày</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giai đoạn 3 -->
+                    <div class="phase-card">
+                        <div class="phase-header p-3">
+                            <span>GIAI ĐOẠN 3: QUY HOẠCH, MT & THIẾT KẾ</span>
+                            <span>Bước 3.1 - 3.5 (Song song)</span>
+                        </div>
+                        <div class="phase-body">
+                            <div class="step-item highlight">
+                                <div class="step-title">3.1. Chấp thuận Tổng mặt bằng & PA Kiến trúc</div>
+                                <div class="step-desc">Dự án < 10 ha theo Điều 10 NĐ 178/2025/NĐ-CP: Phê duyệt mật độ
+                                        xây dựng, tầng cao, khoảng lùi, tỷ lệ cây xanh tối thiểu 20%.</div>
+                                        <div class="step-meta">
+                                            <span class="meta-tag">Cơ quan: Ban Quản lý KCN</span>
+                                            <span class="meta-tag">Thời gian: 15 - 20 ngày</span>
+                                        </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">3.2. Lập & Phê duyệt Báo cáo ĐTM (nếu có)</div>
+                                    <div class="step-desc">Thẩm định hồ sơ môi trường cho dự án nhóm I/II theo Luật BVMT
+                                        2020. Họp hội đồng và ra Quyết định phê duyệt ĐTM.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: BQL KCN ủy quyền / Sở TNMT</span>
+                                        <span class="meta-tag">Thời gian: 30 - 45 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">3.3. Thẩm duyệt Thiết kế về PCCC</div>
+                                    <div class="step-desc">Căn cứ Luật PCCC&CNCH 2024 & NĐ 105/2025/NĐ-CP. Thẩm duyệt
+                                        giao thông xe chữa cháy, khoảng cách, hệ thống báo cháy, chữa cháy tự động.
+                                    </div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: Phòng Cảnh sát PCCC</span>
+                                        <span class="meta-tag">Thời gian: 10 - 15 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">3.4. Thẩm định Báo cáo NCKT / Thiết kế cơ sở</div>
+                                    <div class="step-desc">Thực hiện theo Chương II Nghị định 175/2024/NĐ-CP (thay NĐ
+                                        15/2021). BQL KCN thẩm định an toàn chịu lực, giải pháp kỹ thuật và kết nối hạ
+                                        tầng.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: Phòng QL Xây dựng - BQL KCN</span>
+                                        <span class="meta-tag">Thời gian: 20 - 30 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-title">3.5. Phê duyệt Thiết kế bản vẽ thi công (DED)</div>
+                                    <div class="step-desc">Chủ đầu tư thuê đơn vị tư vấn độc lập thẩm tra, sau đó CĐT tự
+                                        ra Quyết định phê duyệt thiết kế bản vẽ thi công theo Chương III NĐ 175/2024.
+                                    </div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Thẩm quyền: Chủ đầu tư phê duyệt</span>
+                                        <span class="meta-tag">Thời gian: 10 ngày</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Giai đoạn 4 -->
+                        <div class="phase-card">
+                            <div class="phase-header p-4">
+                                <span>GIAI ĐOẠN 4: KHỞI CÔNG & THI CÔNG</span>
+                                <span>Bước 4.1 - 4.3</span>
+                            </div>
+                            <div class="phase-body">
+                                <div class="step-item">
+                                    <div class="step-title">4.1. Lựa chọn Nhà thầu thi công & Tư vấn giám sát</div>
+                                    <div class="step-desc">CĐT đấu thầu hoặc chỉ định thầu. Kiểm tra chặt chẽ Chứng chỉ
+                                        năng lực hoạt động xây dựng phù hợp hạng công trình theo NĐ 175/2024.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Chủ trì: Chủ đầu tư</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">4.2. Miễn GPXD & Gửi Thông báo khởi công</div>
+                                    <div class="step-desc">Công trình trong KCN đã duyệt Tổng mặt bằng và có Thông báo
+                                        thẩm định FS thì <strong>được Miễn Giấy phép xây dựng</strong> (Điểm g Khoản 2
+                                        Điều 89 Luật XD). CĐT gửi Thông báo khởi công trước 03 ngày.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: BQL KCN tiếp nhận</span>
+                                        <span class="meta-tag">Thời gian: 03 ngày trước khởi công</span>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-title">4.3. Thi công xây lắp & Giám sát chất lượng</div>
+                                    <div class="step-desc">Triển khai ép cọc, kết cấu móng, khung thép nhà xưởng, hạ
+                                        tầng kỹ thuật, hệ thống MEP, hệ thống PCCC theo hồ sơ thiết kế được duyệt.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Thời gian thi công: 4 - 8 tháng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Giai đoạn 5 -->
+                        <div class="phase-card">
+                            <div class="phase-header p-5">
+                                <span>GIAI ĐOẠN 5: NGHIỆM THU, HOÀN CÔNG & VẬN HÀNH</span>
+                                <span>Bước 5.1 - 5.5</span>
+                            </div>
+                            <div class="phase-body">
+                                <div class="step-item highlight">
+                                    <div class="step-title">5.1. Cấp Giấy phép Môi trường (GPMT)</div>
+                                    <div class="step-desc">Cấp trong giai đoạn xây lắp hoàn thiện, trước khi vận hành
+                                        thử nghiệm công trình xử lý chất thải theo Luật BVMT 2020.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: BQL KCN / Sở TNMT</span>
+                                        <span class="meta-tag">Thời gian: 30 - 45 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">5.2. Nghiệm thu hoàn thành về PCCC</div>
+                                    <div class="step-desc">Cảnh sát PCCC kiểm tra thực tế, chạy thử liên động toàn bộ hệ
+                                        thống báo cháy, chữa cháy, hút khói. Cấp Văn bản chấp thuận nghiệm thu PCCC theo
+                                        NĐ 105/2025.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: Phòng Cảnh sát PCCC</span>
+                                        <span class="meta-tag">Thời gian: 10 - 15 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">5.3. Kiểm tra công tác nghiệm thu công trình XD</div>
+                                    <div class="step-desc">BQL KCN kiểm tra hồ sơ hoàn công và hiện trạng công trình. Ra
+                                        Thông báo chấp thuận kết quả nghiệm thu đưa công trình vào sử dụng theo NĐ
+                                        175/2024.</div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: Phòng QL Xây dựng - BQL KCN</span>
+                                        <span class="meta-tag">Thời gian: 10 - 15 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item highlight">
+                                    <div class="step-title">5.4. Đăng ký tài sản trên đất (Hoàn công nhà xưởng)</div>
+                                    <div class="step-desc">Nộp hồ sơ cập nhật chứng nhận quyền sở hữu nhà xưởng vào Sổ
+                                        hồng theo Nghị định 101/2024/NĐ-CP (sử dụng Thông báo nghiệm thu thay thế GPXD).
+                                    </div>
+                                    <div class="step-meta">
+                                        <span class="meta-tag">Cơ quan: VPĐK Đất đai / BQL KCN</span>
+                                        <span class="meta-tag">Thời gian: 15 - 20 ngày</span>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-title">5.5. Đưa dự án vào vận hành chính thức</div>
+                                    <div class="step-desc">Doanh nghiệp khai trương hoạt động thương mại và báo cáo tình
+                                        hình đầu tư định kỳ trên Cổng thông tin quốc gia về đầu tư.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- TAB 4: THỦ TỤC ĐẦU TƯ ĐẶC BIỆT FAST-TRACK -->
+        <section id="tab-fasttrack" class="tab-pane">
+            <div class="fast-track-box">
+                <div class="fast-track-title">
+                    <span>⚡</span> CƠ CHẾ ĐẦU TƯ ĐẶC BIỆT TẠI KHU CÔNG NGHIỆP (FAST-TRACK PROCEDURE)
+                </div>
+                <p style="color: #14532d; font-size: 0.95rem; margin-bottom: 16px;">
+                    Quy định đột phá tại <strong>Điều 36a Luật Đầu tư</strong> (được bổ sung bởi Luật số 57/2024/QH15)
+                    và hướng dẫn chi tiết tại <strong>Nghị định số 19/2025/NĐ-CP</strong> ngày 10/02/2025 của Chính phủ.
+                    Cơ chế này áp dụng cho dự án tại KCN/KKT thuộc các ngành công nghệ cao, bán dẫn, vi mạch, trí tuệ
+                    nhân tạo (AI), trung tâm R&D và đổi mới sáng tạo.
+                </p>
+
+                <div class="table-responsive" style="background:#ffffff; border-radius:8px;">
+                    <table class="legal-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">Nội dung so sánh</th>
+                                <th style="width: 37%;">Quy trình Tiêu chuẩn (Standard Track)</th>
+                                <th style="width: 38%; color: #15803d; background: #ecfdf5;">Quy trình Đầu tư Đặc biệt
+                                    (Fast-Track)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Căn cứ pháp lý</strong></td>
+                                <td>Luật Đầu tư 2020 / 2025; Nghị định 31/2021/NĐ-CP</td>
+                                <td style="background: #f0fdf4;"><strong>Điều 36a Luật Đầu tư; Nghị định số
+                                        19/2025/NĐ-CP</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thời gian cấp GCN ĐKĐT</strong></td>
+                                <td>15 - 35 ngày làm việc</td>
+                                <td style="background: #f0fdf4;"><strong style="color:#15803d;">Tối đa 15 ngày làm
+                                        việc</strong> tại Ban Quản lý KCN</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thủ tục ĐTM / Môi trường</strong></td>
+                                <td>Phải lập, thẩm định và được phê duyệt ĐTM trước khi thẩm định thiết kế xây dựng (mất
+                                    2 - 3 tháng)</td>
+                                <td style="background: #f0fdf4;"><strong>Chuyển sang cơ chế HẬU KIỂM:</strong> NĐT nộp
+                                    văn bản cam kết tuân thủ quy chuẩn kỹ thuật môi trường, không phải chờ phê duyệt ĐTM
+                                    tiền kiểm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thẩm duyệt PCCC</strong></td>
+                                <td>Phải có Giấy chứng nhận thẩm duyệt thiết kế PCCC trước khi phê duyệt thiết kế xây
+                                    dựng</td>
+                                <td style="background: #f0fdf4;"><strong>Cam kết tuân thủ tiêu chuẩn an toàn
+                                        PCCC;</strong> cơ quan quản lý hậu kiểm trong quá trình thi công và kiểm tra
+                                    trước khi vận hành</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Giấy phép & Thẩm định Xây dựng</strong></td>
+                                <td>BQL KCN thẩm định thiết kế cơ sở (20 - 30 ngày)</td>
+                                <td style="background: #f0fdf4;"><strong>Miễn thẩm định thiết kế cơ sở tiền
+                                        kiểm;</strong> Chủ đầu tư tự tổ chức thẩm tra, phê duyệt thiết kế và chịu trách
+                                    nhiệm pháp lý</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tổng thời gian chuẩn bị pháp lý</strong></td>
+                                <td><strong>Từ 6 đến 9 tháng</strong></td>
+                                <td style="background: #f0fdf4;"><strong style="color:#15803d; font-size:1.05rem;">Rút
+                                        ngắn chỉ còn từ 1 đến 2 tháng</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: TIẾN ĐỘ SONG SONG & ĐIỂM NGHẼN -->
+        <section id="tab-timeline" class="tab-pane">
+            <div class="card">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="icon">⏱️</span>
+                        Ma Trận Triển Khai Song Song & Chiến Lược Hóa Giải Điểm Nghẽn
+                    </h2>
+                    <span class="status-badge status-warning">Tối Ưu Hóa Tiến Độ Đến 50%</span>
+                </div>
+
+                <div style="margin-bottom: 24px;">
+                    <h3 style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 10px;">
+                        1. Nguyên tắc triển khai song song (Parallel Processing):
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 14px;">
+                        Điểm cốt tử để rút ngắn thời gian chuẩn bị dự án công nghiệp từ 12 tháng xuống 4 - 6 tháng là
+                        <strong>không làm việc tuần tự (serial)</strong> mà phải chỉ định Tổng thầu Tư vấn thiết kế
+                        triển khai đồng thời 3 bộ phận:
+                    </p>
+                    <ul style="padding-left: 20px; font-size: 0.92rem; color: var(--text-main); line-height: 1.8;">
+                        <li><strong>Tuần 5 - Tuần 12:</strong> Ngay sau khi ký Hợp đồng thuê đất và có sơ đồ vị trí,
+                            tiến hành đồng thời: (1) Lập hồ sơ chấp thuận Tổng mặt bằng; (2) Lập Báo cáo ĐTM; (3) Lập
+                            Thiết kế cơ sở & Thẩm duyệt PCCC.</li>
+                        <li><strong>Tuần 13 - Tuần 16:</strong> Khi vừa có chấp thuận Tổng mặt bằng và hồ sơ ĐTM/PCCC đã
+                            trình hội đồng, tiến hành ngay việc nộp thẩm định Báo cáo NCKT (FS) tại Ban Quản lý KCN.
+                        </li>
+                        <li><strong>Tuần 17 - Tuần 18:</strong> Trong lúc BQL KCN hoàn thiện Thông báo thẩm định FS, CĐT
+                            tổ chức đấu thầu lựa chọn nhà thầu thi công xây lắp và chuẩn bị sẵn hồ sơ Thông báo khởi
+                            công.</li>
+                    </ul>
+                </div>
+
+                <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+                    <h3 style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 12px;">
+                        2. Cảnh báo các điểm nghẽn (Bottlenecks) và Giải pháp độc quyền:
+                    </h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+                        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+                            <h4 style="color: #b91c1c; font-size: 0.95rem; margin-bottom: 6px;">❌ Vướng mắc Quy chuẩn
+                                PCCC QCVN 06</h4>
+                            <p style="font-size: 0.85rem; color: #475569;">
+                                Việc lựa chọn sơn chống cháy hoặc giải pháp bọc kết cấu thép nhà xưởng không đáp ứng quy
+                                chuẩn kiểm định mẫu đốt thực tế khiến nhiều dự án bị đình chỉ nghiệm thu PCCC nhiều
+                                tháng.
+                            </p>
+                            <div style="margin-top: 8px; font-size: 0.83rem; color: #15803d; font-weight: 600;">
+                                ✔ Giải pháp: Sử dụng vật liệu tấm bọc chống cháy thạch cao chuyên dụng/bông gốm đã có
+                                chứng chỉ đốt mẫu sẵn, tránh dùng sơn chống cháy khó kiểm định ngoài hiện trường.
+                            </div>
+                        </div>
+
+                        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+                            <h4 style="color: #b91c1c; font-size: 0.95rem; margin-bottom: 6px;">❌ Rủi ro Tiền thuê đất:
+                                Một lần vs Hàng năm</h4>
+                            <p style="font-size: 0.85rem; color: #475569;">
+                                Theo Luật Đất đai 2024, thuê đất trả tiền hàng năm không được thế chấp QSDĐ tại ngân
+                                hàng thương mại, gây bế tắc trong việc vay vốn lưu động hoặc tài trợ dự án.
+                            </p>
+                            <div style="margin-top: 8px; font-size: 0.83rem; color: #15803d; font-weight: 600;">
+                                ✔ Giải pháp: Đàm phán ngay từ đầu phương thức thuê đất trả tiền một lần nếu dự án có nhu
+                                cầu vay vốn ngân hàng để xây dựng nhà xưởng.
+                            </div>
+                        </div>
+
+                        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+                            <h4 style="color: #b91c1c; font-size: 0.95rem; margin-bottom: 6px;">❌ Hiểu sai về Giấy phép
+                                xây dựng</h4>
+                            <p style="font-size: 0.85rem; color: #475569;">
+                                Rất nhiều đơn vị tư vấn vẫn xếp thủ tục xin cấp GPXD làm mất thêm 30 ngày công vô ích
+                                sau khi đã có thẩm định thiết kế xây dựng.
+                            </p>
+                            <div style="margin-top: 8px; font-size: 0.83rem; color: #15803d; font-weight: 600;">
+                                ✔ Giải pháp: Áp dụng triệt để quy định Miễn GPXD trong KCN theo Điểm g Khoản 2 Điều 89
+                                Luật Xây dựng; chuyển thẳng sang thủ tục Thông báo khởi công.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Corporate Footer -->
+    <footer>
+        <div class="footer-container"
+            style="max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; align-items: center; padding: 25px 20px;">
+            <div style="display: flex; align-items: center;">
+                <img src="Logo Kien Lac - Dau tu.jpg" alt="Logo Kiến Lạc Group"
+                    style="width: 75px; height: 75px; border-radius: 50%; border: 2.5px solid #fbbf24; object-fit: cover;">
+            </div>
+
+            <div style="flex: 1; min-width: 320px;">
+                <div class="footer-company-name"
+                    style="font-size: 1.15rem; font-weight: 800; color: #fbbf24; margin-bottom: 8px;">TẬP ĐOÀN KIẾN LẠC
+                    (KIEN LAC GROUP)</div>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.6;">
+                    <div>
+                        <strong style="color: #38bdf8;">🏛️ Cơ sở 1: Kiến Lạc An Giang</strong><br>
+                        <strong>Mã số thuế:</strong> 1702360622<br>
+                        <strong>Trụ sở:</strong> Số 16, đường Nguyễn Chí Thanh, KP. 12 Dương Đông, TP. Phú Quốc, Tỉnh An
+                        Giang.
+                    </div>
+                    <div>
+                        <strong style="color: #34d399;">🏛️ Cơ sở 2: Kiến Lạc TP. Hồ Chí Minh</strong><br>
+                        <strong>Mã số thuế:</strong> 3703510585<br>
+                        <strong>Trụ sở:</strong> Số 5 đường D7, KDC Đô thị Tân Bình, KP Tân Phước, P. Tân Đông Hiệp, TP.
+                        Hồ Chí Minh.
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: right; min-width: 240px;">
+                <div style="font-size: 1.2rem; font-weight: 800; color: #fbbf24; margin-bottom: 4px;">HOTLINE: 0909 860
+                    118</div>
+                <div style="color: #cbd5e1; font-weight: 600;">Website: kienlacgroup.vn</div>
+                <div style="color: #fef08a; font-style: italic; font-size: 0.85rem; margin-top: 4px;">"Vững tâm – Vươn
+                    tầm – Dẫn đầu"</div>
+                <div style="color: #94a3b8; font-size: 0.8rem; margin-top: 4px;">Tư vấn Pháp lý & Quy hoạch Dự án KCN
+                    Toàn Quốc</div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 20px; padding: 15px 20px; text-align: center; font-size: 0.8rem; color: #94a3b8; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+            <span>© 2026 Bản quyền thuộc về TẬP ĐOÀN KIẾN LẠC (KIEN LAC GROUP).</span>
+            <span>Hệ sinh thái pháp lý: Cơ sở An Giang (MST: 1702360622) &amp; Cơ sở TP.HCM (MST: 3703510585).</span>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Tab switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+            const selectedPane = document.getElementById(tabId);
+            if (selectedPane) {
+                selectedPane.classList.add('active');
+            }
+
+            // Find matching tab button
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick').includes(tabId)) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
